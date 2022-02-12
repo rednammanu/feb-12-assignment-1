@@ -1,0 +1,26 @@
+na, phn = input('enter name of customer:'), int(input('enter mobile number:'))
+surf1 = int(input('enter no of surf packets:'))
+lays2 = int(input('enter no of lays packets:'))
+chocolates3 = int(input('enter no of chocolates:'))
+handwash4 = int(input('enter no of handwash packets:'))
+salt5 = int(input('enter salt packets:'))
+surf = 50
+lays = 30
+chocolates = 28
+handwash = 900
+salt=125
+bill=(surf*surf1)+(lays*lays2)+(chocolates*chocolates3)+(handwash*handwash4)+(salt*salt5)
+if bill>5000:
+    dis=bill/100*10
+if bill>3000:
+    dis=bill/100*8
+if bill>2000:
+    dis=bill/100*5
+if bill>1000:
+    dis=bill/100*3
+if bill>3000:
+    tax=bill/100*10
+else:
+    tax=bill/100*18
+mainbill = bill - dis + tax
+print('bill amount:',mainbill)
